@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Snake</title>
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/snake.js"></script>
+		<style>
+			body {background-color: lightslategray;}
+			div.frame {text-align:center;}
+			div.map {background-color: gainsboro;}
+			table.map td.n {width:10px; height:10px; background : url('image/snake.gif') -10px -30px;}
+			table.map td.y {width:10px; height:10px; background : url('image/snake.gif')   0px -20px;}
+			table.map td.p {width:10px; height:10px; background : url('image/snake.gif') -10px   0px;}
+			input.full {width:100%; text-align:center;}
+		</style>
+	</head>
+	<body>
+		<div class=frame>
+			<center>
+				<input type=hidden name=size value=20><br />
+				<input type=hidden name=rate value=200><br />
+				<input type=hidden name=direction value=R><br />
+				<input type=hidden name=point><br />
+				<input type=hidden name=snake value=,0.0,><br />
+				<input type=hidden name=level value=0><br />
+				<div class=score>
+					<input type=text name=score value=0 disabled class=full>
+				</div>
+				<div class=map></div>
+				<div class=score>
+					<input type=button name=start value=start class=full>
+					<input type=button name=restart value=restart class=full>
+					<input type=button name=stop value=stop class=full>
+				</div>
+			</center>
+		</div>
+	</body>
+</html>
